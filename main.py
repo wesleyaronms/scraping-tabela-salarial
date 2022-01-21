@@ -42,7 +42,7 @@ df.to_csv("data/tabela-salarial.csv", index=False)
 # Antes de fazer deste modo, eu salvei as tabelas separadamente, e só depois as juntei. Para tal:
 # Excluir as linhas 18 a 21.
 # na linha 25:
-#     if letter letter != "W":
+#     if letter != "W":
 # na linha 30:
 # table.to_csv(f"data/tabela-salarial-{letter.lower()}.csv", index=False)
 # Antes da linha 33:
