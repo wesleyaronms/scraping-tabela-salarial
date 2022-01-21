@@ -36,11 +36,13 @@ df["Salário Mediana"] = df["Salário Mediana"].map(lambda x: (float(x.replace("
 df["Teto Salarial"] = df["Teto Salarial"].map(lambda x: (float(x.replace(",", "").replace(".", "")) / 100))
 df.to_csv("data/tabela-salarial.csv", index=False)
 
-# No Jupyter Notebook > pd.options.display.float_format = "{:,.2f}".format
 
 ###
 
-# Antes de fazer deste modo, eu salvei as tabelas separadamente:
+# Antes de fazer deste modo, eu salvei as tabelas separadamente, e só depois as juntei. Para tal:
+# Excluir as linhas 18 a 21.
+# na linha 25:
+#     if letter letter != "W":
 # na linha 30:
 # table.to_csv(f"data/tabela-salarial-{letter.lower()}.csv", index=False)
 # Antes da linha 33:
